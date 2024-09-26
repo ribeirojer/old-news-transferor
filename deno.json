@@ -2,10 +2,9 @@
     "tasks": {
       "start": "deno run --allow-net --allow-read --allow-write --allow-sys --allow-env src/cron.ts",
       "test": "deno test --allow-net --allow-read",
-      "lint": "deno run -A npm:@biomejs/biome lint --write --unsafe src"
+      "lint": "deno run -A npm:@biomejs/biome check --write --unsafe src"
     },
     "imports": {
-      "oak/": "https://deno.land/x/oak@v12.5.0/",
       "supabase/": "https://deno.land/x/supabase@1.7.0/"
     }
   }
