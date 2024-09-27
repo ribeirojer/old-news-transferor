@@ -23,7 +23,7 @@ async function transferOldNews() {
 	}
 }
 
-Deno.cron("Transferidor de noticias antigas", "0 0 * * 0", () => {
+Deno.cron("Transferidor de noticias antigas", "0 0 * * 1", () => {
 	console.log("Iniciando o cron job de transferência de notícias...");
 	transferOldNews()
 		.then(() => console.log("Cron job concluído com sucesso."))
